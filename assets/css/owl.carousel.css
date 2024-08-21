@@ -1,0 +1,349 @@
+.owl-carousel,
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1
+}
+
+.owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden
+}
+
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0)
+}
+
+.owl-carousel .owl-item,
+.owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
+}
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: none
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    display: block
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.owl-carousel.owl-loading {
+    opacity: 0;
+    display: block
+}
+
+.owl-carousel.owl-hidden {
+    opacity: 0
+}
+
+.owl-carousel.owl-refresh .owl-item {
+    visibility: hidden
+}
+
+.owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab
+}
+
+.owl-carousel.owl-rtl {
+    direction: rtl
+}
+
+.owl-carousel.owl-rtl .owl-item {
+    float: right
+}
+
+.owl-carousel .animated {
+    animation-duration: 0.1s;
+    animation-fill-mode: both
+}
+
+.owl-carousel .owl-animated-in {
+    z-index: 0
+}
+
+.owl-carousel .owl-animated-out {
+    z-index: 1
+}
+
+.owl-carousel .fadeOut {
+    animation-name: fadeOut
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.owl-height {
+    transition: height .5s ease-in-out
+}
+
+.owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity .4s ease
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d
+}
+
+.owl-carousel .owl-video-wrapper {
+    position: relative;
+    height: 100%;
+    background: #000
+}
+
+.owl-carousel .owl-video-play-icon {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+    background: url(owl.video.play.png) no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    transition: transform .1s ease
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+    -ms-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3)
+}
+
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
+    display: none
+}
+
+.owl-carousel .owl-video-tn {
+    opacity: 0;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: opacity .4s ease
+}
+
+.owl-carousel .owl-video-frame {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%
+}
+
+.slider-area, .single-banner {position: relative; overflow: hidden} 
+.single-slide:after, .banner-area:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.32);
+    width: 100%;
+    height: 100%;
+}
+.two .single-slide:after{
+    background:rgb(0 0 0 / 32%);
+}
+.three .single-slide:after, .banner-area:after{
+    background: rgba(0, 0, 0, 0.80);
+}
+.slider-img{z-index: 1; position: relative; margin-right: -25px}
+.slider-area img {width: 100%;}
+.slide-content, .text-content{z-index: 99; position: relative}
+.text-content-wrapper, .slider-area img {width: 100%;}
+.slide-content-wrapper {
+    display: inline-table;
+    width: 100%;
+}
+.slide-content {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+.slider-area.two .slide-content{
+    text-align: center;
+}
+.slide-content h3 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 58px;
+    padding-top: 80px;
+    text-transform: capitalize;
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeOutDown;
+            animation-name: fadeOutDown;
+}
+.slider-img{
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;
+}
+.slide-content h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 64px;
+    text-transform: capitalize;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeOutDown;
+            animation-name: fadeOutDown;
+}
+
+.slider-area.two .slide-content p {
+    margin-bottom: 40px;
+}
+.slide-content p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 35px;
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeOutDown;
+            animation-name: fadeOutDown;
+}
+.slider-area .default-btn{
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+    -webkit-animation-duration: .8s;
+            animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+.slider-area .owl-item.active .slide-content h2, .slider-area .owl-item.active .slide-content h3, .slider-area .owl-item.active .slide-content p,  .slider-area .owl-item.active .default-btn{
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+}
+.slider-area .owl-item.active .default-btn{
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+}
+.slider-area .owl-item.active .slider-img img{
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+.owl-item.active .slider-img {
+  animation-delay: 0.2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInRight;
+}
+.single-banner .slide-content h2, .single-banner .slide-content h3, .single-banner .slide-content p, .single-banner .banner-btn{
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+}
+.slider-area .owl-item.active .slide-content h3 {-webkit-animation-delay: 500ms;animation-delay: 500ms}
+.slider-area .owl-item.active .slide-content h2 {-webkit-animation-delay: 750ms;animation-delay: 750ms}
+.slider-area .owl-item.active .slide-content p {-webkit-animation-delay: 1100ms;animation-delay: 1100ms}    
+.slider-area .owl-item.active .slide-content .banner-btn {-webkit-animation-delay: 1700ms;animation-delay: 1700ms}      
+.owl-nav div {
+
+    background: rgb(255 192 0);
+    color: #222;
+    font-size: 18px;
+    border-radius: 3px;
+    height: 40px;
+    left: 18px;
+    line-height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 35px;
+    z-index: 999;
+}
+.owl-nav .owl-next {left: auto; right: 0;}

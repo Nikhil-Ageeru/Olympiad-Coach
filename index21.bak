@@ -803,38 +803,38 @@
                 </style>
                 <div class="row gap-2 gap-md-3">
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan1)"> Class 1</a>
+                        <a class="btn btn-orange"> Class 1</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan2)"> Class 2</a>
+                        <a class="btn btn-orange"> Class 2</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan1)"> Class 3</a>
+                        <a class="btn btn-orange"> Class 3</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan2)"> Class 4</a>
+                        <a class="btn btn-orange"> Class 4</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan1)"> Class 5</a>
+                        <a class="btn btn-orange"> Class 5</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan2)"> Class 6</a>
+                        <a class="btn btn-orange"> Class 6</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan1)"> Class 7</a>
+                        <a class="btn btn-orange"> Class 7</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan2)"> Class 8</a>
+                        <a class="btn btn-orange"> Class 8</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan1)"> Class 9</a>
+                        <a class="btn btn-orange"> Class 9</a>
                     </div>
                     <div class="col-2 col-lg-1 ">
-                        <a class="btn btn-orange" onclick="generatePlanCards(plan2)"> Class 10</a>
+                        <a class="btn btn-orange"> Class 10</a>
                     </div>
                 </div>
 
-                <div id="plans-container" class="row pt-3 pt-md-5">
+                <div class="row pt-3 pt-md-5">
                     
                     <div class="col-12 col-lg-4 mb-4 mb-md-2">
                         <div class="plan">
@@ -2027,7 +2027,7 @@
     <script src="assets/js/main.js"></script>
     <script src="plans.js"></script>
     <!-- <button  onclick="generatePlanCards(plan1)">click me</button>
-    <div  class="row">
+    <div id="plans-container" class="row">
 
     </div> -->
 
